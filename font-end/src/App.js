@@ -1,11 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
+import React,{Suspense} from 'react';
 import './App.css';
-
+import { Switch, Route} from "react-router-dom";
+import Navigation from './Component/Navigation/Navigation';
 function App() {
+  const Home =React.lazy(() => import('./Page/Home'));
   return (
     <div>
-    </div>
+    <Suspense fallback={<div></div>}>
+      <div>
+      <Navigation />
+      </div>
+      <Switch>
+        <Route exact path="/" component={Home}/>
+      </Switch>
+    </Suspense>
+      </div>
   );
 }
 

@@ -1,9 +1,8 @@
 import React from 'react'
-
-export default function Navigation() {
+export default function Home() {
     return (
         <div>
-            <h1>Navigation</h1>
+            <h1>Home</h1>
         </div>
     )
 }
