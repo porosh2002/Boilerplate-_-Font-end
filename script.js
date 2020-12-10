@@ -84,7 +84,7 @@ function fetchBookmarks() {
     // Create bookmarks array in localStorage
     bookmarks = [
       {
-        name: 'MD Jamil Kashem Porosh',
+        name: 'MD Jamil Kashem',
         url: 'https://twitter.com/mdjamilkashem',
       },
     ];
