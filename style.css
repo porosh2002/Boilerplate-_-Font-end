@@ -2,10 +2,10 @@
 *{
   margin:0;
   padding:0;
+  font-family: 'Josefin Sans';
 }
 body {
   background-color:rgba(65, 105, 225, 0.671);
-  font-family: 'Josefin Sans';
 }
 
 #show-modal {
@@ -32,9 +32,7 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
 }
-.modal-header p{
-  color: #444;
-}
+
 .item {
   background: rgba(0, 0, 0, 0.5);
   color: white;
@@ -100,7 +98,7 @@ a:active {
 
 .modal {
   background: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 10px rgba(41, 40, 40, 0.8);
   max-width: 95%;
   width: 500px;
   animation: modalopen 1s;
@@ -119,16 +117,17 @@ a:active {
 .close-icon {
   float: right;
   color: white;
-  font-size: 24px;
+  font-size: 20px;
   position: relative;
-  top: 13px;
-  right: 13px;
+  top:20px;
+  right: 25px;
   cursor: pointer;
 }
 
 .modal-header {
   color: #fff;
-  padding: 15px;
+  background-color: royalblue;
+  padding:20px;
 }
 
 h3 {
@@ -147,32 +146,39 @@ h3 {
 
 .form-input {
   width: 97%;
-  padding: 5px;
+  padding:7px 5px;
   display: block;
   outline: none;
+  border:1px solid rgba(65, 105, 225, 0.521);
+  border-radius:3px;
+  color: #444;
 }
 
 .form-label {
   display: block;
+  margin:15px 0px 5px 0px;
 }
 
 button {
   cursor: pointer;
   color: white;
   border: none;
-  height: 30px;
-  width: 100px;
+  padding:10px 0px;
+  width:100%;
   margin-top: 10px;
+  font-size:16px;
+  letter-spacing: 1px;
+  background-color:royalblue;
+  border-radius:3px;
 }
 
 button:hover {
-  filter: brightness(110%);
+  background-color:#444;
 }
 
 button:focus {
   outline: none;
 }
-
 /* Media Query: Large Smartphone (Vertical) */
 @media screen and (max-width: 600px) {
   .container {
