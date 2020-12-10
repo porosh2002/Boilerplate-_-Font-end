@@ -4,7 +4,7 @@
   padding:0;
 }
 body {
-  background-color:#444;
+  background-color:rgba(65, 105, 225, 0.671);
   font-family: 'Josefin Sans';
 }
 
@@ -18,12 +18,13 @@ body {
   align-items: center;
   letter-spacing: 1px;
   width:100%;
-  transition:.3s;
+  transition:.1s;
+  font-size:18px;
 }
 #show-modal:hover{
-  background-color:rgb(118, 152, 255);
+  background-color:#444;
   color: #f7f7f7;
-  transition:.3s;
+  transition:.5s;
 }
 /* Bookmarks */
 .container {
@@ -31,7 +32,9 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
 }
-
+.modal-header p{
+  color: #444;
+}
 .item {
   background: rgba(0, 0, 0, 0.5);
   color: white;
