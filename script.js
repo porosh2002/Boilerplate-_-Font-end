@@ -47,10 +47,12 @@ function buildBookmarks() {
     const { name, url } = bookmark;
     // Item
     const item = document.createElement('div');
+    const itemWrap = document.createElement('div');
+    itemWrap.classList.add('wraper');
     item.classList.add('item');
     // Close Icon
     const closeIcon = document.createElement('i');
-    closeIcon.classList.add('fas', 'fa-times');
+    closeIcon.classList.add('fas', 'fa-trash');
     closeIcon.setAttribute('title', 'Delete Bookmark');
     closeIcon.setAttribute('onclick', `deleteBookmark('${url}')`);
     // Favicon / Link Container
@@ -67,7 +69,8 @@ function buildBookmarks() {
     link.textContent = name;
     // Append to bookmarks container
     linkInfo.append(favicon, link);
-    item.append(closeIcon, linkInfo);
+    item.append(linkInfo,closeIcon)
+    // item.append(itemWrap);
     bookmarksContainer.appendChild(item);
   });
 }

@@ -32,15 +32,6 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
 }
-
-.item {
-  background:url('./black-linen.png');
-  background-color: rgba(68, 68, 68, 0.5);
-  color: white;
-  padding:10px 15px;
-  margin: 10px;
-  border-radius:3px;
-}
 a {
   font-size: 18px;
 }
@@ -171,9 +162,33 @@ button:hover {
 button:focus {
   outline: none;
 }
+.fa-trash,.name{
+cursor: pointer;
+display:block;
+margin:auto 0px;
+}
+.fa-trash{
+  color:rgb(226, 127, 34);
+}
+.fa-trash:hover{
+color: orange;
+}
 /* Media Query: Large Smartphone (Vertical) */
 @media screen and (max-width: 600px) {
   .container {
     flex-direction: column;
   }
+}
+/* ! */
+.item {
+  background-color:#444;
+  color: white;
+  border-radius:3px;
+  display:flex;
+  justify-content:space-around;
+  margin: 30px 20px;
+  padding:10px 20px;
+}
+.name{
+margin-right:50px;
 }
