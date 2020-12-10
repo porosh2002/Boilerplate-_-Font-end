@@ -31,6 +31,9 @@ function validate(nameValue, urlValue) {
     alert('Please provide a valid web address.');
     return false;
   }
+  else{
+   modal.classList.remove('show-modal');
+  }
   // Valid
   return true;
 }
@@ -78,8 +81,8 @@ function fetchBookmarks() {
     // Create bookmarks array in localStorage
     bookmarks = [
       {
-        name: 'Jacinto Design',
-        url: 'http://jacinto.design',
+        name: 'MD Jamil Kashem Porosh',
+        url: 'https://twitter.com/mdjamilkashem',
       },
     ];
     localStorage.setItem('bookmarks', JSON.stringify(bookmarks));

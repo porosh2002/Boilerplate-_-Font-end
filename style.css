@@ -34,20 +34,15 @@ body {
 }
 
 .item {
-  background: rgba(0, 0, 0, 0.5);
+  background:url('./black-linen.png');
+  background-color: rgba(68, 68, 68, 0.5);
   color: white;
-  padding: 20px;
+  padding:10px 15px;
   margin: 10px;
+  border-radius:3px;
 }
-
-.item:hover {
-  background: rgba(0, 0, 0, 0.6);
-}
-
 a {
-  font-size: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
+  font-size: 18px;
 }
 
 a:link,
@@ -63,8 +58,10 @@ a:active {
 
 .fa-times {
   float: right;
+  color: #dfdfdf;
   cursor: pointer;
   z-index: 2;
+  font-size: 13px;
 }
 
 .name {
@@ -129,11 +126,6 @@ a:active {
   background-color: royalblue;
   padding:20px;
 }
-
-h3 {
-  margin: 0;
-}
-
 .modal-content {
   padding: 20px;
   background: whitesmoke;
