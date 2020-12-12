@@ -90,6 +90,7 @@ a:active {
   max-width: 95%;
   width: 500px;
   animation: modalopen 1s;
+  border-radius:5px;
 }
 
 @keyframes modalopen {
@@ -116,9 +117,12 @@ a:active {
   color: #fff;
   background-color: royalblue;
   padding:20px;
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
 }
 .modal-content {
-  padding: 20px;
+  border-radius:5px;
+  padding: 30px 20px;
   background: whitesmoke;
 }
 
@@ -129,11 +133,13 @@ a:active {
 
 .form-input {
   width: 97%;
-  padding:7px 5px;
+  padding:10px;
   display: block;
   outline: none;
-  border:1px solid rgba(65, 105, 225, 0.521);
+  border: none;
+  /* border:1px solid rgba(65, 105, 225, 0.521); */
   border-radius:3px;
+  background-color: #cfcfcf;
   color: #444;
 }
 
